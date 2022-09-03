@@ -16,16 +16,16 @@ public class EmployeeController : ControllerBase
     }
 
     // GET API for all employees
-    [HttpGet(Name="GetEmployees Details")]
+    [HttpGet(Name = "GetEmployees Details")]
     public async Task<IEnumerable<Employee>> GetAll()
     {
         List<Employee> employeeList = await _context.Employees.ToListAsync();
-        return employeeList;    
+        return employeeList;
     }
 
     // Post Employee details to database 
     [HttpPost(Name = "Create Employee Details")]
-    public async Task<ActionResult<Employee>> CreateEmployee([FromBody]Employee? employee)
+    public async Task<ActionResult<Employee>> CreateEmployee([FromBody] Employee? employee)
     {
         try
         {
@@ -41,4 +41,14 @@ public class EmployeeController : ControllerBase
         }
     }
 
+    // PUT api/values/5
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Put(int id, [FromBody] Employee employee)
+    {
+        if (employee is null)
+            return BadRequest();
+        _context.Entry(employee).State = EntityState.Modified;
+        await _context.SaveChangesAsync();
+        return NoContent(); //
+    }
 }
