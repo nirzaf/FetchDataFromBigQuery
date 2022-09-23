@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>Throw</PackageId>
+    <TargetFramework>net6.0</TargetFramework>
+    <Version>1.2.0</Version>
+    <Authors>Mohamed Fazrin</Authors>
+    <PackageIcon>icon-square.png</PackageIcon>
+    <PackageTags>argument,guard,clause,exception,contract,assert,assertions,validation</PackageTags>
+    <Description>A simple, fluent, extensible, and fully customizable library for throwing exceptions using .NET 6+</Description>
+    <RepositoryType>git</RepositoryType>
+    <PackageOutputPath>../artifacts/</PackageOutputPath>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OneOf" Version="3.0.216" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../assets/icon-square.png" Pack="true" Visible="false" PackagePath="" />
+    <None Include="stylecop.json" />
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+</Project>

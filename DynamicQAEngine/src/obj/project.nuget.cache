@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "xQ3Pgf/BHf1dlL17I1gu6pNzotJalORttGNy54Vb3iEBOxliSqiaALyFNbBEdUrNYWYdVXI93Z/y/mtMZCPIaA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nirza\\RiderProjects\\DynamicQAEngine\\src\\Throw.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nirza\\.nuget\\packages\\oneof\\3.0.216\\oneof.3.0.216.nupkg.sha512",
+    "C:\\Users\\nirza\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": []
+}
